@@ -5,9 +5,65 @@ import 'dart:collection';
 // ignore: unexpected_token
 enum colors { red, gree, blue }
 
+void saidHello([String name]) {
+  print('hoal viejo ${name.length}');
+
+}
 main(List<String> arguments) {
 
-  
+  saidHello();
+  saidHello('juxxxxxxxxxxxxxxxxxx');
+
+  Map people = {'dad':"Euclides",'mom':"Olga" , 'son':'Juan'};
+
+  List values = people.values.toList();
+  for (int i = 0; i< values.length ; i ++)
+    {
+      print ("Vamos en indice ${i} con el object ${ values[i] }");
+    }
+    values.forEach((String person) {
+      print ('una linda forma de hacer las cosas ${person}');
+    } );
+
+
+  print ("prueba ini");
+  int age  = 19;
+ // assert(age==43);
+  print ("prueba fin");
+
+  if (age+1 == 43)
+    {print('tiene 45');}
+    else {
+    print ('el fulanito de tales tiene en realidad ${age}');
+  }
+
+  switch (age)
+  {
+    case 18:
+      {
+        print ('prueba 1');
+        break;
+      }
+
+
+
+    case 19:
+      {
+        print ('prueba 2');
+        break;
+      }
+
+    default :
+      print ('no definido');
+      break;
+  }
+//
+//  Map people = {'dad':"Euclides",'mom':"Olga" , 'son':'Juan'};
+//  print(people.values);
+//  print(people.keys);
+//  print('Quien es tu papa ${people["dad"] }');
+
+
 
 //  Queue cola = new Queue();
 //  cola.add(1);
@@ -21,7 +77,7 @@ main(List<String> arguments) {
 
 
 
-  print(cola);
+
 
 //
 //  List<int> values = [1,2,4,5,9];
